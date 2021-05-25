@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/CRUD.css">
+    <title>CRUD</title>
+</head>
+<body>
+    
+
+    <div class="container border shadow mt-5 p-5">
+        <h1>CRUD SYSTEM</h1>
+        <div class="form-group">
+            <label for="ProductName">ProductName:</label>
+            <input type="text" id="ProductName" class="form-control">
+
+
+            <div class="alert alert-danger d-none" id="myAlert" role="alert">
+               <strong> <i>please start with capital letter</i> </strong>
+              </div>
+        </div>
+    
+        <div class="form-group">
+            <label for="ProductCategory">ProductCategory:</label>
+            <input type="text" id="ProductCategory" class="form-control">
+        </div>
+    
+        <div class="form-group">
+            <label for="ProductPrice">ProductPrice:</label>
+            <input type="text" id="ProductPrice" class="form-control">
+        </div>
+    
+    
+    
+        <div class="form-group">
+            <label for="ProductDescription">ProductDescription:</label>
+          <textarea id="ProductDescription" class="form-control"></textarea>
+        </div>
+        <button class="btn btn-info" id="add" onclick="addProduct();">Add Product</button>
+    
+    </div>
+    
+    <input type="text"id="searchInpt"class="form-control w-50 mx-auto my-5"placeholder="search...." onkeyup="search();" >
+    <table class="w-75 text-center table-striped m-auto">
+        <thead>
+            <th>id</th>
+            <th>name</th>
+            <th>category</th>
+            <th>price</th>
+            <th>description</th>
+            <th>delete</th>
+            <th>up date</th>
+        </thead>
+        <tbody id="tbody">
+   
+        </tbody>
+    </table>
+
+
+
+
+
+    <script src="js/popper.min.js"></script>
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/CRUD.js"></script>
+</body>
+</html>
